@@ -11,8 +11,12 @@ ul,ol,li {
 a {
     text-decoration: none;
 }
+img {
+    width: 250px;
+    height: 250px;
+}
 
-.img {
+.img img {
     border-radius: 50%;
     width: 150px;
     margin: 0 auto;
@@ -24,6 +28,7 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+
 .tabla-header {
     background-color:rgb(169, 132, 0);
     display: flex;
@@ -38,3 +43,13 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
+
+
+.productoscategoria {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
