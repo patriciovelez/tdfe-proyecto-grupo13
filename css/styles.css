@@ -52,4 +52,12 @@ img {
     flex-wrap: wrap;
 }
 
+.barradenav {
 
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
