@@ -66,3 +66,35 @@ img {
     justify-content: center;
     padding: 24px;
 }
+
+.menunav {
+    background-color: bisque;
+    padding: 24px 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.menunav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menunav a {
+    color: chocolate;
+    text-decoration: none;
+}
+.buscador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.buscador input{
+    width: 300px;
+    height: 40px;
+    padding: 0px;
+    font-size: 16px;
+}
+.buscador button{
+    height: 40px;
+    padding: 0px;
+    font-size: 16px;
+}
