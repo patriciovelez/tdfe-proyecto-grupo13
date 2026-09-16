@@ -30,7 +30,7 @@ img {
 }
 
 .tabla-header {
-    background-color:rgb(169, 132, 0);
+    background-color:rgb(65, 57, 46);
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -39,7 +39,7 @@ img {
 
 }
 .footer-tabla {
-    background-color:rgb(230, 199, 88) ;
+    background-color:rgb(105, 93, 75);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
@@ -60,4 +60,26 @@ img {
     display: flex;
     justify-content: center;
     padding: 24px;
+}
+.menunav {
+    background-color: rgba(152, 131, 89, 0.68);
+    padding: 24px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.menunav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.menunav li {
+    font-size: 18px;
+}
+.menunav a {
+    text-decoration: none;
+    color: black;
+}
+.buscador {
+    
 }
