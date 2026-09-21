@@ -125,3 +125,6 @@ img {
     color: rgb(91, 65, 55);
     text-decoration: none;
 }
+main {
+    display: flex;
+}
