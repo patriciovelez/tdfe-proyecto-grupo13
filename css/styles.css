@@ -29,6 +29,13 @@ img {
     flex-wrap: wrap;
 }
 
+.productosmasvendidos {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .tabla-header {
     background-color:rgb(65, 57, 46);
     display: flex;
@@ -124,4 +131,17 @@ img {
     text-align: center;
     color: rgb(91, 65, 55);
     text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+h2 {
+
+}
+
+.producto {
+    margin: 10px;
+    border: solid;
 }
