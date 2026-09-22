@@ -62,14 +62,15 @@ img {
     flex-direction: column;
     background-color:rgb(169, 132, 0);
     padding: 24px;
-    width: 220px;
+    width: 20%
     height: auto;
 }
 
 .login {
     display: flex;
     justify-content: center;
-    padding: 24px;
+    align-items: center;
+    width: 80%;
 }
 
 .menunav {
@@ -114,7 +115,7 @@ img {
     flex-direction: column;
     background-color: burlywood;
     padding: 40px;
-    width: 320px;
+    width: 350px;
 }
 .formulario-registro input {
     height: 40px;

@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
-       <div>
+    <div>
         <header class="tabla-header">
             <a href="./index.html" class="logo link">
              <img src="./img/logo_timeward.jpg" alt="logo marca" class="img">
@@ -53,22 +52,22 @@
                     </li>
                 </ul>
             </nav>
-
-            <section class="login">
-                    <form action="./index.html" method="get">
-                        <div>
-                            <label for="email">Email: </label>
-                            <input type="text" name="mail" value="" placeholder="Ingresar email" required>
-                        </div>
-                        <div>
-                            <label for="contraseña">Contraseña: </label>
-                            <input type="text" name="contraseña" value="" id="contraseña" placeholder="Ingresar contraseña" required>
-                        </div>
-                        <button type="submit">Ingresar</button>
-                        <a href="./register.html">No tengo cuenta</a>
-                    </form>
-            </section>
-            <footer class="footer-tabla">
+        <div class="login">
+            <form class="formulario-registro" action="./index.html" method="get">
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="text" name="mail" value="" placeholder="Ingresar email" required>
+                </div>
+                <div>
+                    <label for="contraseña">Contraseña: </label>
+                    <input type="text" name="contraseña" value="" id="contraseña" placeholder="Ingresar contraseña" required>
+                </div>
+                <button type="submit">Ingresar</button>
+                <a href="./register.html">No tengo cuenta</a>
+            </form>
+        </div>    
+    </main>
+    <footer class="footer-tabla">
                 <span>
                     <div>
                         <p>
@@ -90,6 +89,5 @@
                     </div>
                 </span>
             </footer>
-    </main>
 </body>
 </html>
