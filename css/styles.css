@@ -149,3 +149,14 @@ font-size: 35px;
 .lista {
 margin-bottom: 20px;
 }
+.verdetalle {
+    background-color: rgb(65, 57, 46);
+    text-align: center;
+    border-radius: 15%;
+}
+.verdetalle a {
+    color: aliceblue;
+    font-weight: 200;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 23px;
+}
