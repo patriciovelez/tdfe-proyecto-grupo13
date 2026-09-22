@@ -12,8 +12,8 @@ a {
     text-decoration: none;
 }
 img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 200px;
 }
 
 .img img {
@@ -65,7 +65,7 @@ img {
     background-color:rgb(169, 132, 0);
     padding: 24px;
     width: 220px;
-    
+    height: 1200px;
 }
 
 .login {
@@ -138,10 +138,17 @@ main {
 }
 
 h2 {
-
+font-size: 35px;
 }
 
 .producto {
     margin: 10px;
     border: solid;
+    width: 17%;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.275);
+}
+.listacategorias {
+margin-bottom: 10px;
+line-height: 2.5;
 }
