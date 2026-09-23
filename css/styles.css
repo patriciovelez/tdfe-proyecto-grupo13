@@ -15,6 +15,7 @@ a {
 img {
     width: 100%;
     height: 200px;
+    border-radius: 15px;
 }
 
 .logo img {
@@ -144,8 +145,10 @@ font-size: 35px;
 .producto {
     margin: 10px;
     border: solid;
+    border-radius: 12px;
     width: 17%;
-    height: auto;
+    height: 400px;
+    padding: 5px;
     background-color: rgba(128, 128, 128, 0.275);
 }
 .lista {
@@ -154,7 +157,7 @@ margin-bottom: 20px;
 .verdetalle {
     background-color: rgb(65, 57, 46);
     text-align: center;
-    border-radius: 15%;
+    border-radius: 15px;
 }
 .verdetalle a {
     color: aliceblue;
@@ -162,7 +165,10 @@ margin-bottom: 20px;
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 23px;
 }
-
-.dosproductos {
-    background-image: url('../img/color-fondo-prueba.webp');
+.resultados-info {
+    padding: 24px 32px;
+}
+.sinResultados {
+    padding: 24px 32px;
+    font-size: 18px;
 }
