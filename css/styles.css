@@ -37,7 +37,7 @@ img {
 }
 
 .tabla-header {
-    background-color:rgba(0, 0, 128, 0.8);
+    background-color:rgba(145, 117, 65, 0.8);
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -46,7 +46,7 @@ img {
 
 }
 .footer-tabla {
-    background-color:rgba(0, 0, 128, 0.8) ;
+    background-color:rgba(145, 117, 65, 0.8) ;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: white;
@@ -62,7 +62,7 @@ img {
 .barradenav {
     display: flex;
     flex-direction: column;
-    background-color:rgba(0, 0, 128, 0.8);
+    background-color:rgba(80, 59, 6, 0.861);
     padding: 24px;
     height: auto;
     color: white
@@ -72,7 +72,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 .menunav {
@@ -110,6 +110,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
 }
 .formulario-registro {
@@ -117,7 +118,7 @@ img {
     flex-direction: column;
     background-color: burlywood;
     padding: 40px;
-    width: 350px;
+    width: 380px;
 }
 .formulario-registro input {
     height: 40px;
@@ -210,4 +211,83 @@ margin-bottom: 20px;
     font-size: small;
     font-weight: 500;
     margin: 50px;
+}
+@media (max-width: 786px) {
+    .tabla-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .buscador input {
+        width: 200px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .barradenav {
+        width: 100%;
+    }
+
+    .producto {
+        width: 30%;
+    }
+
+    .relojpro {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .formulario-registro {
+        width: 60%;
+    }
+
+}
+@media (max-width: 420px) {
+    .tabla-header {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .buscador {
+        width: 100%;
+    }
+
+    .buscador input {
+        flex: 1;
+        width: auto;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .relojpro {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .relojpro img {
+        width: 100%;
+    }
+
+    .productoReseñas {
+        flex-direction: column;
+    }
+
+    .formulario-registro {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .tags {
+        margin: 20px;
+    }
+
+    .b {
+        margin: 20px;
+    }
+
 }
