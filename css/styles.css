@@ -178,12 +178,36 @@ margin-bottom: 20px;
 }
 
 .relojpro {
-
+    margin: 50px;
+    border: solid;
+    border-radius: 12px;
+    width: 500px;
+    height: auto;
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.275);
 }
 
 .relojpro img {
-    width: 367px;
+    width: 267px;
     height: auto;
+    align-self: center;
+    
+}
+
+
+.b {
+    margin: 50px;
+}
+
+.tags {
+    display: flex;
+    background-color: #d4b15c;
+    color: #20252a
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: small;
+    font-weight: 500;
+    margin: 50px;
 }
 
 .reviews
