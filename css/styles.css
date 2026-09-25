@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0; 
-    padding: 0%;
+    padding: 0;
 }
 
 ul,ol,li {
@@ -177,13 +177,10 @@ margin-bottom: 20px;
     display: flex;
 }
 
-.relojpro {
 
-}
 
 .relojpro img {
     width: 367px;
     height: auto;
 }
 
-.reviews
