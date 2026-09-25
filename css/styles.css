@@ -172,3 +172,18 @@ margin-bottom: 20px;
     padding: 24px 32px;
     font-size: 18px;
 }
+
+.productoReseñas {
+    display: flex;
+}
+
+.relojpro {
+
+}
+
+.relojpro img {
+    width: 367px;
+    height: auto;
+}
+
+.reviews
