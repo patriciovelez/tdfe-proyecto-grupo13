@@ -215,6 +215,35 @@ margin-bottom: 20px;
     font-weight: 500;
     margin: 50px;
 }
+
+
+
+.review1 {
+    margin: 50px;
+    border: solid;
+    border-radius: 12px;
+    width: 500px;
+    height: auto;
+    padding: 5px;
+}
+
+.review2 {
+    margin: 50px;
+    border: solid;
+    border-radius: 12px;
+    width: 500px;
+    height: auto;
+    padding: 5px;
+}
+
+.review3 {
+    margin: 50px;
+    border: solid;
+    border-radius: 12px;
+    width: 500px;
+    height: auto;
+    padding: 5px;
+}
 @media (max-width: 786px) {
     .tabla-header {
         flex-wrap: wrap;
