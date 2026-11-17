@@ -13,3 +13,23 @@ formBuscador.addEventListener("submit", function(event) {
         this.submit();
     }
 });
+
+let listaCategorias = document.querySelector(".listaCategorias");
+
+fetch("https://dummyjson.com/products/categories")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data);
+        let categorias = "";
+
+        for (let i = 0; i < data.length; i++) {
+            categorias += (algo)
+        }
+
+        listaCategorias.innerHTML = categorias;
+    })
+    .catch(function(error) {
+        console.log("El error es: " + error);
+    });
