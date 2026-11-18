@@ -16,7 +16,7 @@ formBuscador.addEventListener("submit", function(event) {
 
 let listaCategorias = document.querySelector(".listaCategorias");
 
-fetch("https://dummyjson.com/products/categories")
+fetch("https://dummyjson.com/products/category-list")
     .then(function(response) {
         return response.json();
     })
@@ -25,7 +25,12 @@ fetch("https://dummyjson.com/products/categories")
         let categorias = "";
 
         for (let i = 0; i < data.length; i++) {
-            categorias += (algo)
+            
+            categorias += `<li>
+                <a href="category.html?id=${data[i]}">${data[i]}</a>
+            </li>`
+            
+        //    categorias += `<li>${data[i]}</li>` ///
         }
 
         listaCategorias.innerHTML = categorias;
