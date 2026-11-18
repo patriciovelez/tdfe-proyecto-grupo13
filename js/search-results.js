@@ -43,9 +43,38 @@ fetch("https://dummyjson.com/products/category-list")
 
     const querystring = location.search; // retorna la info en formato de cadena de texto
     const parametros = new URLSearchParams(querystring); // el objeto URLSearchParams define metodos utiles para trabajar con los paramteros de una URL
-    const valorUsuario = parametros.get("busqueda"); // el metodo .get() permite obtener el valor de una clave dentro de la query string.
+    const terminoBuscado = parametros.get("busqueda"); // el metodo .get() permite obtener el valor de una clave dentro de la query string.
 
 
     let resultadosDeBusqueda = document.querySelector('.resultadosDeBusqueda');
     
-    resultadosDeBusqueda.innerText = `Resultados de busqueda para: "${valorUsuario}" `;
+    resultadosDeBusqueda.innerText = `Resultados de busqueda para: "${terminoBuscado}" `;
+
+    // la lista de resultados que coincidan con el termino buscado
+
+    let listaResultados = document.querySelector(".lista-resultados");
+
+    fetch(`https://dummyjson.com/products/search?q=${terminoBuscado}`)
+        .then (function(response) { //convierte la response a objeto con .json()
+            return response.json();
+        })
+        .then(function(data){ //recibe la info decodificada del metodo then() anterior. por convencion el nombre es 'data'
+            let productos = data.products;
+            let html = "";
+
+            for (let i = 0; i < productos.length; i++) {
+                html += `
+                    <li>
+                        <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
+                        <h2>${productos[i].title}</h2>
+                        <p>$${productos[i].price}</p>
+                        <a href="./product.html?id=${productos[i].id}"> Ver detalle </a>
+                    </li>
+                 `;
+            }
+
+            listaResultados.innerHTML = html;
+        })
+        .catch(function(error){  // atrapa errores en cualquiera de las instancias del fetch()
+            console.log('El error es ' + error)
+        })
