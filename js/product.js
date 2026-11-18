@@ -54,10 +54,17 @@ fetch('https://dummyjson.com/products/' + id )
 
     })
 
-    .then(function(producto) {
+    .then(function(data) {
 
-        console.log(producto);
+        console.log(data);
         imagen.innerHTML = `
+        <img "src=${data.thumbnail}" alt="${data.title}">
+        `;
+        nombre.innerHTML = data.title;
+        marca.innerHTML = ` Marca: ${data.brand}`;
+        descripcion.innerHTML = data.description
+        precio.innerHTML = `Precio: ${data.price}`;
+        categoria.innerHTML = ` Categoria: <a href="./category.html? categoria=${data.category}"> ${data.category} <a/> `
         
-        `
+
     });
