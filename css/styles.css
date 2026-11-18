@@ -227,23 +227,6 @@ margin-bottom: 20px;
     padding: 5px;
 }
 
-.review2 {
-    margin: 50px;
-    border: solid;
-    border-radius: 12px;
-    width: 500px;
-    height: auto;
-    padding: 5px;
-}
-
-.review3 {
-    margin: 50px;
-    border: solid;
-    border-radius: 12px;
-    width: 500px;
-    height: auto;
-    padding: 5px;
-}
 
 .errorBuscador {
     color: red;
