@@ -82,9 +82,12 @@ img {
 }
 .menunav ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.menunav li {
+    margin: 0 12px;
 }
 .menunav a {
     color: chocolate;
@@ -148,7 +151,7 @@ font-size: 35px;
     border: solid;
     border-radius: 12px;
     width: 17%;
-    height: 400px;
+    height: auto;
     padding: 5px;
     background-color: rgba(128, 128, 128, 0.275);
 }
