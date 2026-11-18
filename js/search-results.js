@@ -35,3 +35,17 @@ fetch("https://dummyjson.com/products/category-list")
     .catch(function (error) {
         console.log("El error es: " + error);
     });
+
+    // punto 10 (Pato)
+
+    // texto resultados de busqueda para : elTerminoPuestoEnElBuscador
+    // leer el termino de la URL
+
+    const querystring = location.search; // retorna la info en formato de cadena de texto
+    const parametros = new URLSearchParams(querystring); // el objeto URLSearchParams define metodos utiles para trabajar con los paramteros de una URL
+    const valorUsuario = parametros.get("busqueda"); // el metodo .get() permite obtener el valor de una clave dentro de la query string.
+
+
+    let resultadosDeBusqueda = document.querySelector('.resultadosDeBusqueda');
+    
+    resultadosDeBusqueda.innerText = `Resultados de busqueda para: "${valorUsuario}" `;
