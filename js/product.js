@@ -68,3 +68,17 @@ fetch('https://dummyjson.com/products/' + id )
         
 
     });
+
+
+    // punto 10 --> Los resultados de la búsqueda deben permitir navegación hacia sus páginas de detalle.
+
+    fetch(`https://dummyjson.com/products/${id}`)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (producto) {
+            console.log(producto);
+        })
+        .catch(function (error){
+            console.log("Error:" error);
+        });
