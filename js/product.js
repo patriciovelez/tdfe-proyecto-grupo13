@@ -49,36 +49,23 @@ let listaReviews = document.querySelector('.review1');
 fetch('https://dummyjson.com/products/' + id )
 
     .then(function(response) {
-
         return response.json();
-
     })
 
     .then(function(data) {
 
         console.log(data);
         imagen.innerHTML = `
-        <img "src=${data.thumbnail}" alt="${data.title}">
+        <img src="${data.thumbnail}" alt="${data.title}">
         `;
         nombre.innerHTML = data.title;
         marca.innerHTML = ` Marca: ${data.brand}`;
         descripcion.innerHTML = data.description
         precio.innerHTML = `Precio: ${data.price}`;
-        categoria.innerHTML = ` Categoria: <a href="./category.html? categoria=${data.category}"> ${data.category} <a/> `
-        
-
+        categoria.innerHTML = ` Categoria: <a href="./category.html?categoria=${data.category}">${data.category} <a/> `
+    })
+    .catch(function (error) {
+        console.log("Error:", error);
     });
 
 
-    // punto 10 --> Los resultados de la búsqueda deben permitir navegación hacia sus páginas de detalle.
-
-    fetch(`https://dummyjson.com/products/${id}`)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (producto) {
-            console.log(producto);
-        })
-        .catch(function (error){
-            console.log("Error:" error);
-        });

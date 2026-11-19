@@ -266,6 +266,14 @@ Todo lo que es .lista-resultados afecta al html de results.html para que las ima
     color: #0066cc;
 }
 
+/*prueba*/
+.relojproimg img {
+    display: block;
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+}
+
 @media (max-width: 786px) {
     .tabla-header {
         flex-wrap: wrap;
