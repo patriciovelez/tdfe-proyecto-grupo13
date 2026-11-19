@@ -49,7 +49,7 @@ fetch("https://dummyjson.com/products/category/smartphones")
 
         for (let i = 0; i < productos.length; i++) {
             smartphones += `<article class="producto">
-                                <img src="${productos[i].NOSE}" alt="${productos[i].title}">
+                                <img src="${productos[i].images[0]}" alt="${productos[i].title}">
                                 <h3>${productos[i].title}</h3>
                                 <p>${productos[i].description}</p>
                                 <p>$${productos[i].price}</p>
@@ -78,7 +78,7 @@ fetch("https://dummyjson.com/products/category/sports-accessories")
 
         for (let i = 0; i < productos.length; i++) {
             sports += `<article class="producto">
-                           <img src="${productos[i].NOSE}" alt="${productos[i].title}">
+                           <img src="${productos[i].images[0]}" alt="${productos[i].title}">
                            <h3>${productos[i].title}</h3>
                            <p>${productos[i].description}</p>
                            <p>$${productos[i].price}</p>
