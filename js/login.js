@@ -35,3 +35,33 @@ fetch("https://dummyjson.com/products/category-list")
     .catch(function (error) {
         console.log("El error es: " + error);
     });
+
+let formLogin = document.querySelector(".formulario-registro");
+let inputEmail = document.querySelector("#email");
+let inputPassword = document.querySelector("#contraseña");
+let errorLogin = document.querySelector(".errorLogin");
+
+formLogin.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    let email = inputEmail.value;
+    let password = inputPassword.value;
+
+    if (email == "") {
+        errorLogin.innerText = "El email es obligatorio";
+        return;
+    }
+
+    if (password == "") {
+        errorLogin.innerText = "La contraseña es obligatoria";
+        return;
+    }
+
+    if (password.length < 6) {
+        errorLogin.innerText = "La contraseña debe tener al menos 6 caracteres";
+        return;
+    }
+
+    localStorage.setItem("email", email);
+    window.location.href = "./index.html";
+});
