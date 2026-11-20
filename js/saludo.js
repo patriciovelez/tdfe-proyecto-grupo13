@@ -12,11 +12,5 @@ if (emailGuardado) {
     saludo.innerHTML = `<span>Bienvenido: ${emailGuardado}</span>
                         <a href="#" class="logout">logout</a>`;
 
-    let botonLogout = document.querySelector(".logout");
-
-    botonLogout.addEventListener("click", function (evento) {
-        evento.preventDefault();
-        localStorage.removeItem("email");
-        window.location.href = "./index.html";
-    });
+    
 }
