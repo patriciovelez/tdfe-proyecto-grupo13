@@ -44,7 +44,7 @@ let descripcion = document.querySelector('.descripcion');
 let precio = document.querySelector('.precio');
 let categoria = document.querySelector('.categoria');
 let stock = document.querySelector('.stock');
-let tags = document.querySelector('.tags');
+let tags = document.querySelector('.tags ul');
 let listaReviews = document.querySelector('.review1');
 fetch('https://dummyjson.com/products/' + id )
 
@@ -62,7 +62,24 @@ fetch('https://dummyjson.com/products/' + id )
         marca.innerHTML = ` Marca: ${data.brand}`;
         descripcion.innerHTML = data.description
         precio.innerHTML = `Precio: ${data.price}`;
-        categoria.innerHTML = ` Categoria: <a href="./category.html?categoria=${data.category}">${data.category} <a/> `
+        categoria.innerHTML = ` Categoria: <a href="./category.html?categoria=${data.category}">${data.category} </a> `
+        if (data.stock > 0){
+            stock.innerHTML = `Stock: ${data.stock} unidades`
+        } else {
+            stock.innerHTML = `Sin stock`
+        }
+        for (let i = 0; i < data.tags.length && i<3; i++) {
+            tags.innerHTML += `<li>${data.tags[i]}</li>`
+        }
+        for (let i = 0; i < data.reviews.length; i++){
+            listaReviews.innerHTML += ` 
+            <article class="review">
+                <p>Rating: ${data.reviews[i].rating}</p>
+                <p>${data.reviews[i].comment}</p>
+                <p>${data.reviews[i].date}</p>
+                <p>${data.reviews[i].reviewerName}</p>
+            </article>`
+        }
     })
     .catch(function (error) {
         console.log("Error:", error);
