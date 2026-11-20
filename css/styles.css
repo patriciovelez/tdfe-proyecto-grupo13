@@ -211,6 +211,10 @@ margin-bottom: 20px;
     margin: 50px;
 }
 
+.errorLogin {
+    color: red;
+}
+
 .tags {
     display: flex;
     background-color: #d4b15c;
