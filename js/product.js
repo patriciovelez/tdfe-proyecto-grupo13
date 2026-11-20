@@ -58,7 +58,7 @@ fetch('https://dummyjson.com/products/' + id )
         imagen.innerHTML = `
         <img src="${data.thumbnail}" alt="${data.title}">
         `;
-        nombre.innerHTML = data.title;
+        nombre.innerHTML = `${data.title}`;
         marca.innerHTML = ` Marca: ${data.brand}`;
         descripcion.innerHTML = data.description
         precio.innerHTML = `Precio: ${data.price}`;
