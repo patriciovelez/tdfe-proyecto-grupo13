@@ -10,13 +10,13 @@ formularioRegistro.addEventListener("submit", function (evento) {
     const repetirPassword = document.querySelector('.repetirPassword').value ; // el .value es para invocar el valor que puso el usuario
 
     // email obligatorio
-    if (email == "") {
+    if (email === "") {
         alert("El email no puede estar vacio"); 
         return; // es para que no se envie
     }
 
     // contraseña obligatoria
-    if (password == "") {
+    if (password === "") {
         alert("La contraseña es obligatoria");
         return;
     }
