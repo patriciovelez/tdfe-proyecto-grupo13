@@ -1,6 +1,6 @@
 let emailGuardado = localStorage.getItem("email");
-let menuLogin = document.querySelector(".menuLogin");
-let menuRegistro = document.querySelector(".menuRegistro");
+let menuLogin = document.querySelector(".menuingreso");
+let menuRegistro = document.querySelector(".menuregistro");
 let saludo = document.querySelector(".saludo");
 
 if (emailGuardado) {
