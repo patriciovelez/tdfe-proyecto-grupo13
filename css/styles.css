@@ -222,7 +222,11 @@ margin-bottom: 20px;
     margin: 50px;
 }
 
-
+.titulodecat {
+    width: 100%;
+    font-size: 50px;
+    flex-wrap: wrap;
+}
 
 .review1 {
     margin: 10px;
