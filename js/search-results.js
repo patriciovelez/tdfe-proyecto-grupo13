@@ -53,6 +53,7 @@ fetch("https://dummyjson.com/products/category-list")
     // la lista de resultados que coincidan con el termino buscado
 
     let listaResultados = document.querySelector(".lista-resultados");
+    let mensajeSinResultados = document.querySelector(".sinResultados");
 
     fetch(`https://dummyjson.com/products/search?q=${terminoBuscado}`)
         .then (function(response) { //convierte la response a objeto con .json()
@@ -60,6 +61,14 @@ fetch("https://dummyjson.com/products/category-list")
         })
         .then(function(data){ //recibe la info decodificada del metodo then() anterior. por convencion el nombre es 'data'
             let productos = data.products;
+
+            // si no hay resultados, avisar y cortar
+
+            if (productos.length == 0) {
+                mensajeSinResultados.innerText = `No hay resultados para el termino: "${terminoBuscado}" `;
+                return;
+            }
+
             let html = "";
 
             for (let i = 0; i < productos.length; i++) {
