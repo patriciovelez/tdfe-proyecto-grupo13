@@ -52,7 +52,7 @@ fetch("https://dummyjson.com/products/category-list")
 
     // la lista de resultados que coincidan con el termino buscado
 
-    let listaResultados = document.querySelector(".lista-resultados");
+    let listaResultados = document.querySelector(".productosrandom");
     let mensajeSinResultados = document.querySelector(".sinResultados");
 
     fetch(`https://dummyjson.com/products/search?q=${terminoBuscado}`)
@@ -72,14 +72,16 @@ fetch("https://dummyjson.com/products/category-list")
             let html = "";
 
             for (let i = 0; i < productos.length; i++) {
-                html += `
-                    <li>
-                        <img src="${productos[i].thumbnail}" alt="${productos[i].title}">
-                        <h2>${productos[i].title}</h2>
-                        <p>$${productos[i].price}</p>
-                        <a href="./product.html?id=${productos[i].id}"> Ver detalle </a>
-                    </li>
-                 `;
+                html += 
+                    `<article class="producto">
+                                <img src="${productos[i].images[0]}" alt="${productos[i].title}">
+                                <h3>${productos[i].title}</h3>
+                                <p>${productos[i].description}</p>
+                                <p>$${productos[i].price}</p>
+                                <div class="verdetalle">
+                                    <a href="./product.html?id=${productos[i].id}">Ver detalle</a>
+                                </div>
+                            </article>`;
             }
 
             listaResultados.innerHTML = html;
